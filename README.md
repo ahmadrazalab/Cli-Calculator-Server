@@ -7,11 +7,12 @@ CMD :
 calc 2+5
 calc 2+6-8
 ```
+![image](https://github.com/ahmadrazalab/calc-server/assets/146583259/d2a2a6ef-f5aa-4d31-a227-577097161cc5)
 
 ## How to install 
 ```
 wget https://github.com/ahmadrazalab/calc-server/releases/download/<version-no>/calc-arm.deb
-sudo apt install calc-arm.deb or sudo dpkg -i calc-arm.deb)
+sudo apt install ./calc-arm.deb 
 ```
 
 
@@ -32,3 +33,6 @@ calc-arm/
 ```
 dpkg-deb --build calc-arm
 ```
+
+
+NOTE : Please ignore the working while installation of deb package " N: Download is performed unsandboxed "
