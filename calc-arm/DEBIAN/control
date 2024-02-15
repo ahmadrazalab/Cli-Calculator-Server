@@ -1,0 +1,5 @@
+Package: calc-arm
+Version: 1.0
+Architecture: all
+Maintainer: ahmad-raza ar.raza.siddiqui@gmail.com
+Description: Calculator command line tool for server

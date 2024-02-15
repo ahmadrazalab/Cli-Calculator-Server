@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import sys
+import re
+
+def calculate(expression):
+    try:
+        result = eval(expression)
+        return result
+    except Exception as e:
+        return f"Error: {e}"
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: cal <expression>")
+        sys.exit(1)
+
+    expression = sys.argv[1]
+    if not re.match(r'^[0-9+\-*/\s()]+$', expression):
+        print("Invalid expression")
+        sys.exit(1)
+
+    result = calculate(expression)
+    print(result)
